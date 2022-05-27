@@ -112,5 +112,29 @@ students[1] = caio;
 
 console.log(students[1]);*/
 
+//----------function-----------------
 
+function faseMotivacional(){
+    console.log("fase motivacional terminada");
+}
 
+let headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 OPR/86.0.4363.64",
+    "Accept-Language": "pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7",
+    "Accept-Charset": "application/x-www-form-urlencoded; charset=UTF-8",
+    "Origin": "https://developer.riotgames.com"
+} 
+let method = "GET";
+let url = "https://developer.riotgames.com";
+
+function requestHeader(url, method, headers){
+    return fetch(url, {
+        method: method,
+        headers: headers
+    })
+    .then(res => res.json())
+    .then(res => console.log(res))
+    .catch(err => console.log(err))
+}
+
+ console.log(requestHeader(url, method, headers));
