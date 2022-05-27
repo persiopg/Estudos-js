@@ -23,7 +23,7 @@
     * Primitivo Estrutural
         *null
 
-*/
+
 
 console.log("ola mundo");
 
@@ -72,3 +72,45 @@ const person = {
     isAdmin: true
 }
 console.log(person)
+
+//--------- exercicio
+
+let weight;
+
+console.log(typeof weight);
+
+let name = "persio";
+let age = 26;
+let start = 0;
+let isSubscribed = true;
+
+let student = {
+    name: "Persio",
+    age: 26,
+    weight: 70,
+    isSubscribed: true
+}
+
+console.log(`${student.name} de idade ${student.age} pesa ${student.weight}kg`);
+
+let students = [];
+
+students = [
+    student
+]
+
+console.log(students[0]);
+
+let caio = {
+    name: "caio", 
+    age: 30,
+    weight: 70,
+    isSubscribed: true,
+}
+
+students[1] = caio;
+
+console.log(students[1]);*/
+
+
+
